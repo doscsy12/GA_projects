@@ -1,0 +1,116 @@
+college,admissions,act_mid,sat_ave,ave_gpa
+Adelphi University,0.743,24.0,1161.0,3.22
+Albion College,0.6876,24.0,1118.0,3.29
+Allegheny College,0.6215,27.0,1272.0,3.04
+Amherst College,0.1131,32.0,1431.0,3.48
+Appalachian State University,0.7681,25.0,1202.0,3.1
+Ashland University,0.7117,22.0,1104.0,3.14
+Auburn University,0.8067,28.0,1300.0,3.03
+Baylor University,0.4533,29.0,1318.0,3.1
+Boston College,0.2722,33.0,1437.0,3.35
+Bradley University,0.7021,25.0,1191.0,3.17
+Brigham Young University,0.6749,29.0,1326.0,3.337
+Bucknell University,0.3423,30.0,1355.0,3.4
+California State University-Fresno,0.5794,19.0,1030.0,2.93
+California State University-Fullerton,0.5269,22.0,1113.0,2.87
+California State University-Los Angeles,0.4781,18.0,979.0,3.01
+California State University-Northridge,0.5934,19.0,1019.0,2.85
+California State University-Sacramento,0.8226,19.0,1035.0,2.95
+California State University-San Bernardino,0.6856,17.0,985.0,2.96
+Case Western Reserve University,0.2736,32.0,1436.0,3.36
+Central Michigan University,0.6951,23.0,1106.0,2.94
+Clemson University,0.5126,30.0,1334.0,3.14
+Coastal Carolina University,0.6887,22.0,1097.0,2.8
+College of Charleston,0.7833,25.0,1191.0,3.013
+Columbus State University,0.7942,20.0,1009.0,2.95
+DePauw University,0.6436,27.0,1253.0,3.21
+Duquesne University,0.7433,26.0,1221.0,3.27
+East Carolina University,0.7872,22.0,1117.0,2.87
+Elon University,0.7844,28.0,1265.0,3.29
+Florida Atlantic University,0.6328,24.0,1166.0,2.83
+Florida Gulf Coast University,0.6667,23.0,1142.0,3.0
+Florida International University,0.5751,26.0,1198.0,2.74
+Florida State University,0.3597,28.0,1284.0,3.05
+Francis Marion University,0.6804,19.0,1002.0,2.55
+Gardner-Webb University,0.6671,22.0,1089.0,3.11
+George Washington University,0.4084,32.0,1395.0,3.24
+Georgetown University,0.1436,33.0,1473.0,3.54
+Georgia Institute of Technology-Main Campus,0.2058,32.0,1418.0,3.25
+Georgia State University,0.7615,23.0,1153.0,3.01
+Gonzaga University,0.617,28.0,1288.0,3.26
+Grand Valley State University,0.8302,24.0,1161.0,3.03
+Hampden-Sydney College,0.5743,24.0,1185.0,2.79
+Harvey Mudd College,0.1367,34.0,1526.0,3.31
+Haverford College,0.1632,33.0,1468.0,3.42
+Iowa State University,0.9205,25.0,1220.0,3.05
+Johns Hopkins University,0.1117,34.0,1514.0,3.38
+Kennesaw State University,0.7522,23.0,1144.0,3.02
+Knox College,0.6832,28.0,1255.0,3.26
+Lafayette College,0.3148,31.0,1363.0,3.29
+Lander University,0.4316,20.0,1040.0,2.66
+Lindenwood University,0.8756,23.0,1116.0,3.09
+Massachusetts Institute of Technology,0.067,35.0,1547.0,3.39
+Middlebury College,0.1536,33.0,1460.0,3.53
+Minot State University,0.6667,20.0,1045.0,3.17
+Monmouth University,0.7665,24.0,1150.0,3.108
+Montana State University,0.8194,24.0,1194.0,3.15
+New York University,0.162,32.0,1443.0,3.52
+Northwestern University,0.0905,34.0,1506.0,3.48
+Old Dominion University,0.8933,21.0,1081.0,2.75
+Oregon State University,0.8233,25.0,1202.0,3.01
+Pomona College,0.074,34.0,1480.0,3.59
+Reed College,0.3947,32.0,1433.0,3.2
+Rice University,0.0872,34.0,1520.0,3.55
+Roanoke College,0.748,25.0,1166.0,2.99
+Rockhurst University,0.6367,24.0,1189.0,3.35
+San Jose State University,0.6357,23.0,1139.0,2.96
+Southern Methodist University,0.4729,31.0,1405.0,3.24
+Southern Utah University,0.7835,24.0,1135.0,3.2
+Texas Christian University,0.4712,28.0,1288.0,3.239
+Texas State University,0.8113,22.0,1102.0,2.8
+The College of New Jersey,0.4928,28.0,1267.0,3.22
+Towson University,0.7631,23.0,1139.0,3.14
+Tufts University,0.1495,33.0,1472.0,3.39
+University of Arkansas,0.7709,27.0,1253.0,2.95
+University of California-Berkeley,0.1625,33.0,1449.0,3.29
+University of California-Los Angeles,0.1232,32.0,1429.0,3.27
+University of California-San Diego,0.3148,30.0,1375.0,3.14
+University of California-Santa Barbara,0.2956,31.0,1370.0,3.1
+University of Central Florida,0.4436,28.0,1264.0,3.01
+University of Chicago,0.0617,34.0,1528.0,3.35
+University of Connecticut,0.4942,29.0,1312.0,3.175
+University of Delaware,0.7136,27.0,1261.0,3.16
+University of Florida,0.3658,31.0,1394.0,3.35
+University of Georgia,0.453,30.0,1347.0,3.32
+University of Houston,0.6498,25.0,1219.0,2.64
+University of Idaho,0.7776,24.0,1137.0,2.93
+University of Illinois Chicago,0.727,25.0,1161.0,2.96
+University of Illinois Urbana-Champaign,0.5903,29.0,1342.0,3.25
+University of Iowa,0.8255,26.0,1235.0,2.98
+University of Kansas,0.931,26.0,1235.0,3.06
+University of Kentucky,0.9585,26.0,1227.0,3.11
+University of Minnesota-Morris,0.5672,25.0,1201.0,3.06
+University of North Dakota,0.8112,23.0,1147.0,2.99
+University of North Florida,0.7228,23.0,1159.0,2.94
+University of North Texas,0.7361,24.0,1166.0,2.86
+University of Oregon,0.818,25.0,1210.0,3.1
+University of Southern California,0.1142,33.0,1453.0,3.28
+University of Vermont,0.673,29.0,1287.0,3.08
+University of West Georgia,0.593,20.0,1020.0,2.83
+University of Wisconsin-Green Bay,0.8524,21.0,1085.0,3.27
+University of Wisconsin-Madison,0.5441,30.0,1371.0,3.25
+University of Wisconsin-Milwaukee,0.7657,22.0,1105.0,2.92
+University of Wisconsin-Oshkosh,0.7633,22.0,1105.0,2.98
+Utah State University,0.9095,25.0,1201.0,3.131
+Valdosta State University,0.5717,21.0,1072.0,2.87
+Vanderbilt University,0.0912,34.0,1515.0,3.4049
+Villanova University,0.2824,33.0,1422.0,3.37
+Virginia Polytechnic Institute and State University,0.7004,28.0,1292.0,3.15
+Washington and Lee University,0.1857,33.0,1453.0,3.44
+Washington State University,0.758,23.0,1131.0,3.09
+Wellesley College,0.2156,33.0,1452.0,3.37
+Western Michigan University,0.7986,23.0,1113.0,3.16
+Western Washington University,0.9038,25.0,1181.0,3.21
+Whitman College,0.5592,31.0,1365.0,3.45
+Williams College,0.126,34.0,1488.0,3.38
+Winthrop University,0.6878,21.0,1067.0,2.93
