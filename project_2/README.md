@@ -24,15 +24,24 @@ As expected, size matters! Larger living areas, area of first floor, lot area, m
 
 On the other hand, the age of the property has a negative impact on sale price. However, this can be curtailed by having remodeling or renovations done.
 
+**Main factors:** 
+The overall quality of the property is a huge factor in determining its value. Overall quality is the rating of the overall finish, material, etc of the house. This is also evident in other factors, since condition of the material on the exterior, kitchen, fireplace, basement, heating are also related to the general overall quality of the house.
+
+As expected, size matters! Larger living areas, area of first floor, lot area, masonry veneer area, number of baths are also huge factors in the sale price. An extra bathroom (up to 4 in total) can increase value to the property.
+
+On the other hand, the age of the property has a negative impact on sale price. However, this can be curtailed by having remodeling or renovations done.
+
 **Renovations:**
 - **What renovations then will add the most value to a house?**
-<br> An extension to the property (increase in square footage), especially when one adds to the living areas, rather than add an extra bedroom, will increase the value. Number of bedrooms seemed to have little impact. It could be that expanding a bedroom might reduce living areas. 
+- An extension to the property (increase in square footage), especially when one adds to the living areas, rather than add an extra bedroom, will increase the value. Number of bedrooms seemed to have little impact. It could be that expanding a bedroom might reduce living areas. 
 
 - Renovations to just one part of the house like upgrading the kitchen or bathroom, will fetch a higher sale price. One can also make it more efficient - by installing smart-home technology can help increase its value.
 <br> 
+
 - **What improvements will NOT add value to a house?**
-<br> The size of a porch has little effect. Not everyone likes to sit on the porch. While a porch can be used in good weather, one can stay indoors all day.
-<br> Having a swimming pool or pool area haa no effect. This is not surprising since it is expensive and a hassle to maintain.
+- The size of a porch has little effect. Either not everyone likes to sit on the porch, or it cannot be used all year. While a porch can be used in good weather, one can stay indoors all day.
+- Having a swimming pool or pool area haa no effect. This is not surprising since it is expensive and a hassle to maintain.
+
 
 
 
