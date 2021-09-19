@@ -33,7 +33,7 @@ On the other hand, the age of the property has a negative impact on sale price. 
 
 - **What improvements will NOT add value to a house?**
 - The size of a porch has little effect. Either not everyone likes to sit on the porch, or it cannot be used all year. While a porch can be used in good weather, one can stay indoors all day.
-- Having a swimming pool or pool area haa no effect. This is not surprising since it is expensive and a hassle to maintain.
+- Having a swimming pool or pool area has no effect. This is not surprising since it is expensive and a hassle to maintain.
 
 
 
