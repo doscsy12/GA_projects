@@ -41,7 +41,7 @@ In this project, I will discuss Resnet50 & VGG16. Keras offers many other [model
 <br>
 <br> Similarly to ResNet, the input shape for VGG16 should be in 4D tensor with shape (batch_shape, conv_dim1, conv_dim2, channel). Thus, middle three images were extracted from each MRI scan, and used as inputs into the model. Only the last convolutional block of VGG16 and added fully-connected layers were trained. Other layers were frozen. Despite having only 23 layers, there was a tendency to overfit. Kernel_regularizer, batch normalisation and dropout were tuned to minimise overfitting. However, a GlobalAveragePooling layer with a Dropout of 0.6 worked well to minimise overfitting. Despite this, mean accuracy remains poor, at 0.56 for all three planes. Mean precision was 0.45. Due to the tendency to overfit, VGG16 was also considered too complex for the dataset. 
 
-### Own models
+### Custom models
 Since the pretrained models were too complex for the dataset, demonstrated a tendency to overfit, and I am limited by what I can do to improve the dataset, I decided to build my own models instead. The models should be relatively 'simplier' than the previous pretrained models. There are, however, several challenges in building a model from scratch. Firstly, 1130 is too small a dataset for training. Secondly, a self-built model would usually result in a lower performance. 
 
 #### Adapted from AlexNet
@@ -59,7 +59,7 @@ Since the pretrained models were too complex for the dataset, demonstrated a ten
 <br> **Stacked classifier**
 <br> Predictions from each model (of each plane) was combined/stacked and become new features for training another classifier to compute the final prediction. This acts as a stacked generalization where the outputs of the models were used an inputs into another classifier. Logistic regression model was used since each plane would be given the best weight. The plane with the highest weightage is the axial plane, followed by the coronal plane, and then the sagittal plane. Accuracy increased to 0.60, but precision decreased to 0.41. 
 
-#### Functional API
+#### Functional model
 ![functional architecture](https://github.com/doscsy12/knee_mri_proj/blob/main/images/func_architecture.png)
 <br> The Keras functional API was explored, since it can handle models with multiple inputs. Three inputs (one from each plane) was used for three parallel models, leading to one output. To minimise overfitting, kernel_regularization, batch normalisation and dropout were tuned. Batch size and sgd's learning rate were also explored. Unlike the stacked classifier with logistic regression, each plane was assumed to have equal weightage. Accuracy was similar to the geometric mean of previous models at 0.575. However, precision significantly increased to 1.0. 
 
