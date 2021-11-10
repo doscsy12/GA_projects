@@ -19,6 +19,7 @@ Data is from [MRNet](https://stanfordmlgroup.github.io/competitions/mrnet/). It 
 | meniscus_vgg16      | vgg16          | extracted three | meniscus                |
 | meniscus_alexnet    | alexnet        | extracted three | meniscus                |
 | meniscus_ownmodel   | own            | extracted one   | meniscus                |
+| stacking_logisticregression |  own    | --              | --                      |
 | kneeone_ownmodel    | own            | extracted one   | meniscus, acl, abnormal |
 | meniscus_fulldata   | own            | full data       | meniscus                |
 | meniscus_functional | functional     | extracted one   | meniscus                |
@@ -57,7 +58,7 @@ Since the pretrained models were too complex for the dataset, demonstrated a ten
 <br> To minimise overfitting, kernel_regularization, batch normalisation and dropout were tuned. To actually control the learning rate of the optimser, sgd with a slow learning rate and momentum were selected based on previous experience with AlexNet. Geometric mean of the accuracy of the three models was 0.575, and mean precision was 0.667. 
 <br>
 <br> **Stacked classifier**
-<br> Predictions from each model (of each plane) was combined/stacked and become new features for training another classifier to compute the final prediction. This acts as a stacked generalization where the outputs of the models were used an inputs into another classifier. Logistic regression model was used since each plane would be given the best weight. The plane with the highest weightage is the axial plane, followed by the coronal plane, and then the sagittal plane. Accuracy increased to 0.60, but precision decreased to 0.41. 
+<br> Predictions from each model (of each plane) was combined/stacked and become new features for training another classifier to compute the final prediction. This acts as a stacked generalization where the outputs of the models were used an inputs into another classifier. Logistic regression model was used since each plane would be given the best weight. The plane with the highest weightage is the axial plane, followed by the coronal plane, and then the sagittal plane. Accuracy increased to 0.67, but precision decreased to 0.44. 
 
 #### Functional model
 ![functional architecture](https://github.com/doscsy12/knee_mri_proj/blob/main/images/func_architecture.png)
