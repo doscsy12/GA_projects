@@ -65,7 +65,7 @@ Since the pretrained models were too complex for the dataset, demonstrated a ten
 
 ## Discussion
 <br> Explainability presents a major problem in healthcare, especially when there are consequences that will impact someone else. In other words, a patient diagnosed with a meniscus tear would require surgery. Thus, the model’s internal logic needs to be interpreted, as to how it was making its decisions. Grad-CAM was applied to the scans, which enables one to understand the predictions made by the model. 
-<br> https://github.com/doscsy12/GA_projects/blob/master/capstone/images/sample_CAM.png
+![sample CAM] (https://github.com/doscsy12/GA_projects/blob/master/capstone/images/sample_CAM.png)
 <br> The left figure is the generated heatmap, while the right figure is the superimposed heatmap with the MRI scan. 
 
 
