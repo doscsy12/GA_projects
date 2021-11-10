@@ -19,10 +19,11 @@ Data is from [MRNet](https://stanfordmlgroup.github.io/competitions/mrnet/). It 
 | meniscus_vgg16      | vgg16          | extracted three | meniscus                |
 | meniscus_alexnet    | alexnet        | extracted three | meniscus                |
 | meniscus_ownmodel   | own            | extracted one   | meniscus                |
-| stacking_logisticregression |  own    | --              | --                      |
+| stacking_logisticregression |  own    | --              | --                     |
+| meniscus_functional | functional     | extracted one   | meniscus                |
 | kneeone_ownmodel    | own            | extracted one   | meniscus, acl, abnormal |
 | meniscus_fulldata   | own            | full data       | meniscus                |
-| meniscus_functional | functional     | extracted one   | meniscus                |
+
 
 ## Models
 ### Transfer Learning
@@ -58,7 +59,7 @@ Since the pretrained models were too complex for the dataset, demonstrated a ten
 <br> To minimise overfitting, kernel_regularization, batch normalisation and dropout were tuned. To actually control the learning rate of the optimser, sgd with a slow learning rate and momentum were selected based on previous experience with AlexNet. Geometric mean of the accuracy of the three models was 0.575, and mean precision was 0.667. 
 <br>
 <br> **Stacked classifier**
-<br> Predictions from each model (of each plane) was combined/stacked and become new features for training another classifier to compute the final prediction. This acts as a stacked generalization where the outputs of the models were used an inputs into another classifier. Logistic regression model was used since each plane would be given the best weight. The plane with the highest weightage is the axial plane, followed by the coronal plane, and then the sagittal plane. Accuracy increased to 0.67, but precision decreased to 0.44. 
+<br> Predictions from each model (of each plane) was combined/stacked and become new features for training another classifier to compute the final prediction. This acts as a stacked generalization where the outputs of the models were used an inputs into another classifier. Logistic regression model was used since each plane would be given the best weight. The plane with the highest weightage is the axial plane, followed by the sagittal plane, and then the coronal plane. Accuracy increased to 0.67, but precision decreased to 0.44. 
 
 #### Functional model
 ![functional architecture](https://github.com/doscsy12/knee_mri_proj/blob/main/images/func_architecture.png)
@@ -70,4 +71,10 @@ Since the pretrained models were too complex for the dataset, demonstrated a ten
 <br> The left figure is the generated heatmap, while the right figure is the superimposed heatmap with the MRI scan. 
 <br> What these images tell us is that the model was making a prediction based on the brightly coloured spot. In other words, CAM allowed me to ‘see’ what the model was seeing. In addition, the prediction made 'sense' because the prediction was based on the highlighted regions of the meniscus, where a possible radial tear might occur. 
 
+## Conclusion and Recommendations
+The functional model was selected as the best among the poor-performing models. This is due to several reasons: 
+<br> - it is the most ‘logical’ model since it utilizes 3 inputs to predict one output, 
+<br> - it has the best precision score, despite its lower accuracy,
+<br> - it seems that the model could learn to look past artefacts, poor resolution, etc, which radiologists take years to specialise.
+<br> There is obviously a need to refine the model especially taking into account the constraints of the current dataset. In order for the model to be useful to radiologists, it must be able to assess clinical significance of individual features. Unfortunately, healthcare data, in itself, is limited and sparse, due to privacy issues.  Nevertheless, it is important to seek out other collaborators who could provide more data for validation, which will enable the model to learn better, and achieve better accuracy and precision metrics. 
 
