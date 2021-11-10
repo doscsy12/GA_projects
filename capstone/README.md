@@ -1,7 +1,7 @@
 # Title: Development of an algorithm for automatic detection of meniscus tears in knee magnetic resonance imaging (MRI) scans.
 
 # Research aim
-Utilising machine learning models as a computational technique for the diagnosis of osteoarthritis is still relatively new. The aim in this project is to develop a machine learning algorithm, and as proof of concept, to determine if the algorithm can identify meniscus tears by differentiating/ localizing abnormalities in MRI scans of the knee.
+Utilising machine learning models as a computational technique for the diagnosis of osteoarthritis is still relatively new. The aim in this project is to develop a machine learning algorithm, and as proof of concept, to determine if the algorithm can identify meniscus tears by differentiating/ localizing abnormalities in MRI scans of the knee. This is important not to replace radiologists, but that the problems associated with increasing workloads can be alleviated by new technologies. 
 
 ## Background
 Osteoarthritis (OA) is the most prevalent medically treated arthritic condition worldwide. Diagnosis of symptomatic OA is usually made on the basis of clinical examination/ radiography and reported pain in the same joint. A meniscal tear is a frequent orthopaedic diagnosis and an early indication of OA. However, 61% of randomly selected subjects who showed meniscal tears in their knees during magnetic resonance imaging (MRI) scans, have not had any pain, aches, or stiffness during the previous months (Englund et al., 2008). So, meniscal tears are frequently encountered in both asymptomatic and symptomatic knees (Zanetti et al., 2003). Since an early detection of meniscal tear in asymptomatic knee appears to be an early indicator of OA and a risk factor for other articular structural changes, there is a need for a better and faster identification of meniscal tears (Ding et al., 2007). This is especially important in the absence of specialised radiologists, or a backlog due to increased use of medical imaging (McDonald et al., 2015, Kumamaru et al., 2018). 
@@ -12,7 +12,7 @@ Data is from [MRNet](https://stanfordmlgroup.github.io/competitions/mrnet/). It 
 <br> Metrics were accuracy and precision. Accuracy was used to determine the overall performance of the model. 
 <br> MRI scanning is costly and requires a long scanning time. A patient would only be sent for an MRI scan, if further imaging evaluation is required. Thus, precision was used as another metric since I need to know how many of the positives were true positives. Due to time and costs, the more false positives there are, the more costly each true positive is. 
 
-## Notebooks
+## Modeling Notebooks
 | notebook            | model          | dataset         | diagnosis               |
 |---------------------|----------------|-----------------|-------------------------|
 | meniscus_resnet50   | resnet50       | extracted three | meniscus                |
@@ -63,5 +63,9 @@ Since the pretrained models were too complex for the dataset, demonstrated a ten
 ![functional architecture](https://github.com/doscsy12/knee_mri_proj/blob/main/images/func_architecture.png)
 <br> The Keras functional API was explored, since it can handle models with multiple inputs. Three inputs (one from each plane) was used for three parallel models, leading to one output. To minimise overfitting, kernel_regularization, batch normalisation and dropout were tuned. Batch size and sgd's learning rate were also explored. Unlike the stacked classifier with logistic regression, each plane was assumed to have equal weightage. Accuracy was similar to the geometric mean of previous models at 0.575. However, precision significantly increased to 1.0. 
 
+## Discussion
+<br> Explainability presents a major problem in healthcare, especially when there are consequences that will impact someone else. In other words, a patient diagnosed with a meniscus tear would require surgery. Thus, the model’s internal logic needs to be interpreted, as to how it was making its decisions. Grad-CAM was applied to the scans, which enables one to understand the predictions made by the model. 
+<br> https://github.com/doscsy12/GA_projects/blob/master/capstone/images/sample_CAM.png
+<br> The left figure is the generated heatmap, while the right figure is the superimposed heatmap with the MRI scan. 
 
 
