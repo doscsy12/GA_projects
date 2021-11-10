@@ -76,5 +76,6 @@ The functional model was selected as the best among the poor-performing models. 
 <br> - it is the most ‘logical’ model since it utilizes 3 inputs to predict one output, 
 <br> - it has the best precision score, despite its lower accuracy,
 <br> - it seems that the model could learn to look past artefacts, poor resolution, etc, which radiologists take years to specialise.
+<br> 
 <br> There is obviously a need to refine the model especially taking into account the constraints of the current dataset. In order for the model to be useful to radiologists, it must be able to assess clinical significance of individual features. Unfortunately, healthcare data, in itself, is limited and sparse, due to privacy issues.  Nevertheless, it is important to seek out other collaborators who could provide more data for validation, which will enable the model to learn better, and achieve better accuracy and precision metrics. 
 
