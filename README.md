@@ -1,4 +1,4 @@
-# Title: Projects in General Assembly
+# Projects in General Assembly
 
 Projects:
 1. Predictive validity of SAT/ACT scores.
