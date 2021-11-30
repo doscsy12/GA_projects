@@ -5,4 +5,4 @@ Projects:
 2. Explorative data analysis (EDA) and building a regression model to determine the factors/features that will affect housing prices.
 3. Webscraping subreddits forum and developing a NLP classification model (coffee vs tea), so that a beverage company can decide whether to focus on the coffee or tea market in an area.
 4. West nile virus prediction model to provide suggestions of when/ where an aerial spray should be used to control mosquito population and combat infection.
-Capstone. Developing predictive algorithm for automatic detection of meniscus tears in knee MRI scans.
+<br> Capstone. Developing predictive algorithm for automatic detection of meniscus tears in knee MRI scans.
