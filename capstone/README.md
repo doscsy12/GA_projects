@@ -54,7 +54,9 @@ Since the pretrained models were too complex for the dataset, demonstrated a ten
 
 #### Model based on LeNet
 <img src="https://github.com/doscsy12/knee_mri_proj/blob/main/images/ownmodel.png" width="300">
-<br> This model is a simple stack of two convolution layers with a ReLU activation and followed by max-pooling layers. This is very similar to the architectures that Yann LeCun built in the 1990s for image classification (with the exception of ReLU) ([LeCun et al., 1998](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf)). In addition, three fully-connected layers were added, which ends with a single unit and a sigmoid activation, for a binary classification. I made LeNet even smaller by reducing the number of neurons in the connected layers. 
+<br> This model is a simple stack of two convolution layers with a ReLU activation and followed by max-pooling layers. This is very similar to the architectures that Yann LeCun built in the 1990s for image classification (with the exception of ReLU) 
+
+([LeCun et al., 1998](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf)). In addition, three fully-connected layers were added, which ends with a single unit and a sigmoid activation, for a binary classification. I made LeNet even smaller by reducing the number of neurons in the connected layers. 
 <br> 
 <br> To minimise overfitting, kernel_regularization, batch normalisation and dropout were tuned. To actually control the learning rate of the optimser, sgd with a slow learning rate and momentum were selected based on previous experience with AlexNet. Geometric mean of the accuracy of the three models was 0.575, and mean precision was 0.667. 
 <br>
