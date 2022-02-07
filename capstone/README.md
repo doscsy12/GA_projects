@@ -52,9 +52,10 @@ Since the pretrained models were too complex for the dataset, demonstrated a ten
 <br>
 <br> To minimise overfitting, kernel_regularization, batch normalisation and dropout were tuned. Accuracy scores were found to fluctuate heavily over 50%, which implies that the model is not better than flipping a coin. So to ensure that the model is learning, and increasing its ability to generalise, smaller batch sizes of 8, 16, 32, and 64 were tested. Too small a batch size, and the model loses its ability to generalise, since there is too much noise, and learning is volatile. Too large a batch size, and the model also loses its ability to generalise, and the learning is slower. However, there is a higher chance that convergence to a global optima might occur. Batch size of 32 was chosen in the end. In addition, sgd's learning rate was decreased to 1e-5. Importantly, lowering the learning rate and decreasing the batch size actually allows the model to train better. Nevertheless, mean accuracy was at 0.575 for all three planes; Mean precision was 0.57. 
 
+
 #### Model based on LeNet
 <img src="https://github.com/doscsy12/knee_mri_proj/blob/main/images/ownmodel.png" width="300">
-<br> This model is a simple stack of two convolution layers with a ReLU activation and followed by max-pooling layers. This is very similar to the architectures that Yann LeCun built in the 1990s for image classification (with the exception of ReLU) 
+This model is a simple stack of two convolution layers with a ReLU activation and followed by max-pooling layers. This is very similar to the architectures that Yann LeCun built in the 1990s for image classification (with the exception of ReLU) 
 
 ([LeCun et al., 1998](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf)). In addition, three fully-connected layers were added, which ends with a single unit and a sigmoid activation, for a binary classification. I made LeNet even smaller by reducing the number of neurons in the connected layers. 
 <br> 
@@ -68,7 +69,7 @@ Since the pretrained models were too complex for the dataset, demonstrated a ten
 <br> The Keras functional API was explored, since it can handle models with multiple inputs. Three inputs (one from each plane) was used for three parallel models, leading to one output. To minimise overfitting, kernel_regularization, batch normalisation and dropout were tuned. Batch size and sgd's learning rate were also explored. Unlike the stacked classifier with logistic regression, each plane was assumed to have equal weightage. Accuracy was similar to the geometric mean of previous models at 0.575. However, precision significantly increased to 1.0. 
 
 ## Discussion
-<br> Explainability presents a major problem in healthcare, especially when there are consequences that will impact someone else. In other words, a patient diagnosed with a meniscus tear would require surgery. Thus, the model’s internal logic needs to be interpreted, as to how it was making its decisions. Grad-CAM was applied to the scans, which enables one to understand the predictions made by the model. 
+Explainability presents a major problem in healthcare, especially when there are consequences that will impact someone else. In other words, a patient diagnosed with a meniscus tear would require surgery. Thus, the model’s internal logic needs to be interpreted, as to how it was making its decisions. Grad-CAM was applied to the scans, which enables one to understand the predictions made by the model. 
 ![sample CAM](https://github.com/doscsy12/GA_projects/blob/master/capstone/images/sample_CAM.png)
 <br> The left figure is the generated heatmap, while the right figure is the superimposed heatmap with the MRI scan. 
 <br> What these images tell us is that the model was making a prediction based on the brightly coloured spot. In other words, CAM allowed me to ‘see’ what the model was seeing. In addition, the prediction made 'sense' because the prediction was based on the highlighted regions of the meniscus, where a possible radial tear might occur. 
